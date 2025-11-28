@@ -17,3 +17,15 @@ def divide(a, b):
     if b == 0:
         raise ValueError("Cannot divide by zero")
     return a / b
+
+def power(a, b):
+    """Return the exponential product of two numbers."""
+    return a ** b
+
+def test_power():
+    """Test power function."""
+    assert power(2, 3) == 8
+    assert power(5, 0) == 1
+    assert power(3, 1) == 3
+    assert power(-2, 3) == -8
+    assert power(4, 0.5) == 2  # optional: tests square root
